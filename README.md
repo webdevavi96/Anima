@@ -149,3 +149,8 @@ Avinash Chaurasiya
 - Share it with fellow anime lovers
 
 - Contribute via PRs
+
+## Screenshot
+
+![Project Screenshot](screenshots/anima_extension.png)
+![Project Demo](screenshots/AnimaVideo.mp4)
