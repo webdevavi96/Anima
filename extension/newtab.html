@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>New Tab</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <video id="background" autoplay muted loop playsinline src="assets/background.mp4"></video>
+
+  <div class="container">
+    <header>
+      <div class="left glass-control alan-sans-600">
+        <div class="alan-sans-600">
+          <div class="btns">
+            <button id="add-link" class="btn cormorant-garamond-600">+</button>
+            <button id="remove-link" class="btn cormorant-garamond-600">-</button>
+          </div>
+
+          <ul id="links"></ul>
+        </div>
+
+      </div>
+    </header>
+
+
+    <main>
+      <aside class="weather-box">
+        <div class="weather-glass">
+          <h1 id="weather-head" class="macondo-regular">Weather Info</h1>
+          <div class="weather-header">
+            <span class="city iceberg-regular"></span>
+            <span class="status codystar-regular-600"></span>
+          </div>
+
+          <div class="weather-main">
+            <div class="temp playfair-display-600"></div>
+            <div class="meta cormorant-garamond-500">
+            </div>
+          </div>
+
+          <div class="weather-footer">
+            <div class="info">
+              <span class="label codystar-light-700">Humidity</span>
+              <span class="value alan-sans-600"></span>
+            </div>
+            <div class="info">
+              <span class="label codystar-light">Wind</span>
+              <span class="value alan-sans-600"></span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+    </main>
+
+    <footer>
+      <div class="theme-toggle macondo-regular">
+        <span class="label">Theme</span>
+        <label class="switch">
+          <input type="checkbox" id="themeToggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="about macondo-regular">
+        <p>
+          Visit my official <a href="https://webdevavi96.netlify.app/" target="_blank" rel = "noopener noreferrer" id="info">website</a> for more information
+        </p>
+      </div>
+
+      <div class="time-wrap">
+        <div id="date" class="macondo-regular"></div>
+        <div id="time" class="playfair-display-600"></div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="newtab.js"></script>
+</body>
+
+</html>

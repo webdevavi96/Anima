@@ -1,0 +1,496 @@
+@import url("https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Codystar:wght@300;400&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Iceberg&family=Macondo&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DK+Loopet:wght@100..400&display=swap");
+
+.iceberg-regular {
+  font-family: "Iceberg", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playwrite-dk-loopet-400 {
+  font-family: "Playwrite DK Loopet", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.playwrite-dk-loopet-500 {
+  font-family: "Playwrite DK Loopet", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.codystar-light-300 {
+  font-family: "Codystar", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.codystar-light-500 {
+  font-family: "Codystar", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.codystar-light-700 {
+  font-family: "Codystar", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.codystar-regular-400 {
+  font-family: "Codystar", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.codystar-regular-500 {
+  font-family: "Codystar", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.codystar-regular-600 {
+  font-family: "Codystar", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.cormorant-garamond-500 {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.cormorant-garamond-600 {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.playfair-display-600 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.alan-sans-600 {
+  font-family: "Alan Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.macondo-regular {
+  font-family: "Macondo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  color: white;
+  overflow: hidden;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: -1;
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+}
+header {
+  position: relative;
+  z-index: 2;
+}
+
+.left {
+  position: fixed;
+  top: 50%;
+  left: 24px;
+  transform: translateY(-50%);
+
+  padding: 12px 14px;
+  border-radius: 20px;
+
+  backdrop-filter: blur(10px);
+  background: rgba(20, 20, 24, 0.45);
+
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 10px 30px rgba(0, 0, 0, 0.55);
+
+  animation: fadeIn 0.6s ease;
+}
+
+.left li {
+  list-style: none;
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.link-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 8px 14px;
+  border-radius: 18px;
+
+  background: rgba(20, 20, 24, 0.45);
+  backdrop-filter: blur(10px);
+
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 8px 26px rgba(0, 0, 0, 0.5);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.25s ease;
+}
+
+.link-item:hover {
+  transform: translateX(6px);
+  box-shadow: 0 12px 32px rgba(235, 125, 125, 0.35);
+}
+
+.link-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.link-text {
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(245, 245, 245, 0.9);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  all: unset;
+
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+  cursor: pointer;
+
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+  color: #111;
+
+  background: linear-gradient(to right, #eb7d7d, #c35f5f);
+
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.18),
+    0 8px 22px rgba(235, 125, 125, 0.45);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 30px rgba(235, 125, 125, 0.6);
+}
+
+.btn:focus-visible {
+  outline: 2px solid #eb7d7d;
+  outline-offset: 3px;
+}
+
+footer {
+  position: fixed;
+  bottom: 24px;
+  right: 32px;
+  left: 32px;
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.theme-toggle, .about {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 8px 14px;
+  border-radius: 20px;
+
+  backdrop-filter: blur(10px);
+  background: rgba(20, 20, 24, 0.45);
+
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 10px 30px rgba(0, 0, 0, 0.5);
+
+  animation: fadeIn 0.6s ease;
+}
+
+.about{
+  font-size: 15px;
+}
+
+.theme-toggle .label {
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(245, 245, 245, 0.85);
+}
+
+.switch {
+  position: relative;
+  width: 38px;
+  height: 20px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  background: #f5f5f5;
+  transition: transform 0.25s ease;
+}
+
+.switch input:checked + .slider {
+  background: linear-gradient(to right, #eb7d7d, #c35f5f);
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(18px);
+}
+
+#info{
+  color: #c35f5f;
+  text-decoration:none;
+}
+
+.time-wrap {
+  text-align: right;
+}
+
+#date {
+  font-size: 15px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 6px;
+  text-shadow: 0 6px 30px rgba(0, 0, 0, 0.75);
+}
+
+#time {
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: #eb7d7d;
+  text-shadow: 0 8px 40px rgba(0, 0, 0, 0.8);
+}
+
+main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-20px);
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0 16px;
+  }
+
+  #time {
+    font-size: 44px;
+  }
+}
+
+#time {
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+body.remove-mode .link-item {
+  cursor: pointer;
+  box-shadow:
+    inset 0 0 0 1px rgba(235, 125, 125, 0.4),
+    0 0 0 rgba(0, 0, 0, 0);
+}
+
+body.remove-mode .link-item:hover {
+  background: rgba(235, 125, 125, 0.15);
+  box-shadow:
+    inset 0 0 0 1px rgba(235, 125, 125, 0.7),
+    0 10px 26px rgba(235, 125, 125, 0.35);
+}
+
+body.remove-mode .link-text {
+  color: #eb7d7d;
+}
+
+
+
+
+.weather-box {
+  position: fixed;
+  top: 50%;
+  right: 32px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+#weather-head{
+  margin-bottom: 5px;
+}
+
+.weather-glass {
+  width: 220px;
+  padding: 18px 20px;
+  border-radius: 22px;
+
+  background: rgba(18, 18, 22, 0.6); 
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 18px 48px rgba(0, 0, 0, 0.65);
+}
+
+
+.weather-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 14px;
+}
+
+.weather-header .city {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  color: rgba(245, 245, 245, 0.95);
+}
+
+.weather-header .status {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #eb7d7d;          
+  opacity: 0.95;
+  text-shadow: 0 2px 8px rgba(235, 125, 125, 0.4);
+}
+
+
+.weather-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.weather-main .temp {
+  font-size: 42px;
+  line-height: 1;
+  color: #f5f5f5;
+}
+
+.weather-main .meta {
+  font-size: 14px;
+  color: rgba(245, 245, 245, 0.7);
+  margin-top: 4px;
+}
+
+
+.weather-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.weather-footer .info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.weather-footer .label {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(245, 245, 245, 0.55);
+}
+
+.weather-footer .value {
+  font-size: 13px;
+  color: rgba(245, 245, 245, 0.9);
+}
