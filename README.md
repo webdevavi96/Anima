@@ -155,5 +155,5 @@ Avinash Chaurasiya
 ![Project Screenshot](screenshots/anima_extension.png)
 
 Watch demo video 👇
-[![Watch Demo](https://res.cloudinary.com/meplay/video/upload/so_0/AnimaVideo_qiudnw.jpg)](https://res.cloudinary.com/meplay/video/upload/AnimaVideo_qiudnw.mp4)
+[![Watch Demo](/screenshots/anima_extension.png)](/screenshots/demo_video.mp4)
 
