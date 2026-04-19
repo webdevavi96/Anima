@@ -1,7 +1,7 @@
 # Anima – Anime-Themed Chrome New Tab Extension
 
 **Anima** is a modern, anime-inspired Chrome extension that replaces the default New Tab with a cinematic experience.  
-It combines animated backgrounds, live weather, quick links, and a custom Chrome theme for anime lovers.
+It combines animated backgrounds, live weather and quick links for anime lovers.
 
 ---
 
@@ -42,12 +42,11 @@ Anima/
 │ │
 │ ├── background.js
 │ └── manifest.json
-|
+│
 └── README.md
 ```
 
 ---
-
 
 ## Extension (`/extension`)
 
@@ -59,6 +58,7 @@ Anima/
   - Quick links
 - Uses `chrome.storage.local`
 - Built with **Manifest V3**
+
 ---
 
 ## Weather Data
@@ -132,7 +132,6 @@ Avinash Chaurasiya
 ![Project Screenshot](screenshots/anima_extension.png)
 
 Watch demo video 👇
-[![Watch Demo](/screenshots/anima_extension.png)](/screenshots/demo_video.mp4)
+[![Watch Demo](/screenshots/anima_extension.png)](https://drive.google.com/file/d/19Bw6FtkXdeqd9KyLzvSJeUtpnLCpe7pI/view?usp=drive_link)
 
-## [Buy me a coffee]()
-
+[Buy me a Coffee ☕](buymeacoffee.com/webdevavi96)
