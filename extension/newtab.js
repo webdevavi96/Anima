@@ -163,14 +163,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (background) document.getElementById("background").src = background;
   });
 
-  const toggle = document.getElementById("themeToggle");
-  chrome.storage.local.get("themeInstalled", ({ themeInstalled }) => {
-    toggle.checked = !!themeInstalled;
-  });
-
-  toggle.onchange = () =>
-    chrome.storage.local.set({ themeInstalled: toggle.checked });
-
   chrome.storage.onChanged.addListener((c, a) => {
     if (a === "local" && c.links) renderLinks();
   });
