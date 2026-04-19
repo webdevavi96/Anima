@@ -42,21 +42,14 @@ Anima/
 │ │
 │ ├── background.js
 │ └── manifest.json
-│
-├── theme/
-│ ├── manifest.json
-│ ├── assets/
-│ │ ├── theme_background.png
-│ │ └── icon.png
-│
+|
 └── README.md
 ```
 
 ---
 
-## Extension vs Theme
 
-### Extension (`/extension`)
+## Extension (`/extension`)
 
 - Overrides Chrome New Tab
 - Displays:
@@ -66,16 +59,6 @@ Anima/
   - Quick links
 - Uses `chrome.storage.local`
 - Built with **Manifest V3**
-
-### 🔹 Theme (`/theme`)
-
-- Applies Chrome UI styling:
-  - Tab bar
-  - Toolbar
-  - Omnibox
-- Independent Chrome Theme
-- Can be installed separately
-
 ---
 
 ## Weather Data
@@ -108,12 +91,6 @@ chrome://extensions
 4. Click Load unpacked
 
     - Select the /extension folder
-
-5. (Optional) Load the theme for better experience:
-
-    - Go to Extensions → Themes
-
-    - Load the /theme folder
 
 ## Permissions Used
 
@@ -156,4 +133,6 @@ Avinash Chaurasiya
 
 Watch demo video 👇
 [![Watch Demo](/screenshots/anima_extension.png)](/screenshots/demo_video.mp4)
+
+## [Buy me a coffee]()
 
