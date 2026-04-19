@@ -1,4 +1,7 @@
 Cached Theme.pak
 Cached*
-extension.crx
-extension.pem
+*.pem
+*.key
+*.crt
+*.env
+*.crx
